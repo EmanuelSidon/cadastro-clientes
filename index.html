@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? family = Sora: wght @ 300; 400; 500 & display = swap "rel =" stylesheet ">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Cadastro De Clientes</title>
+
+</head>
+
+<body>
+    <div class="container form-group">
+        <fieldset>
+            <legend class="legend"><h2>Formulário De Cadastro</h2></legend>
+            <div class="forms">
+                <input type="text" name="nome" id="nome" class="user" required>
+                <label class="userLabel" for="nome">Nome Completo</label>
+            </div>
+            <div class="forms">
+                <input type="text" name="email" id="email" class="user" required>
+                <label class="userLabel" for="email">Email</label>
+            </div>
+            <div class="forms">
+                <input type="text" name="cpf" id="cpf" class="user" required>
+                <label class="userLabel" for="cpf">CPF</label>
+            </div>
+            <div class="forms">
+                <input type="text" name="cnpj" id="cnpj" class="user" required>
+                <label class="userLabel" for="cnpj">CNPJ</label>
+            </div>
+            <div class="genero">
+                <h3>Genero:</h3>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="genero" value="masculino"  required>
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" id="genero" value="feminino" required>
+                <label for="outro">Outro</label>
+                <input type="radio" name="genero" id="genero" value="outro" required>
+            </div>
+            <label class="userLabel" for="dataNascimento"><strong>Data De Nascimento</strong></label>
+            <input type="date" name="dataNascimento" id="nascimento" class="user" required>
+            <div class="forms">
+                <input type="tel" name="Telefone" id="tel" class="user" required>
+                <label class="userLabel" for="nome">Telefone</label>
+            </div>
+            <div class="forms">
+                <input type="text" name="cep" id="cep" class="user" required>
+                <label class="userLabel" for="cep">Cep</label>
+            </div>
+            <div class="forms">
+                <input type="text" name="cidade" id="cidade" class="user" required>
+                <label class="userLabel" for="cidade">Cidade</label>
+            </div>
+            <div class="forms">
+                <input type="text" name="estado" id="estado" class="user" required>
+                <label class="userLabel" for="estado">Estado</label>
+            </div>
+            <div class="forms">
+                <input type="text" name="bairro" id="bairro" class="user" required>
+                <label class="userLabel" for="bairro">Bairro</label>
+            </div>
+            <div class="forms">
+                <input type="text" name="logradouro" id="logradouro" class="user" required>
+                <label class="userLabel" for="logradouro">Logradouro</label>
+            </div>
+            <div class="forms">
+                <input type="text" name="numero" id="numero" class="user" required>
+                <label class="userLabel" for="numero">Número</label>
+            </div>
+            <button id="submit" class="btn">Enviar</button>
+        </fieldset>  
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome Completo</th>
+                <th>Email</th>
+                <th>CPF</th>
+                <th>CNPJ</th>
+                <th>Genero</th>
+                <th>Data De Nascimento</th>
+                <th>Telefone</th>
+                <th>Cep</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>Bairro</th>
+                <th>Logradouro</th>
+                <th>Número</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+         <tbody class="table" id="dados"></tbody>
+    </table>
+
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/jquery.mask.js"></script>
+    <script src="./js/maskcpf.js"></script>
+    <script src="./js/maskcnpj.js"></script>
+    <script src="./js/masktel.js"></script>
+    <script src="./js/cep.js"></script>
+    <script src="./js/table.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
